@@ -1,0 +1,18 @@
+<div class="padded">
+<h2><%= link_to_unless_current post.title, post %></h2>
+<div class="postBody col-md-5">
+	<div class="padded">
+		<%= simple_format post.body %>
+	</div>
+</div>
+<div class="clear"></div>
+<div class="padded"><span class="glyphicon glyphicon-tags"> Tags: </span> <%= raw post.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')%></div>
+<!--<div>Tags: <%= post.tag_list %>-->
+<div class="clear"></div>
+	<tr>
+	    <!--<td><%= link_to 'Show', post %></td>-->
+	    <td><%= link_to 'Edit', edit_post_path(post) %></td> | 
+	    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td> | 
+	    <td><%= link_to 'Back', posts_path %></td>
+	</tr>
+</div>

@@ -1,0 +1,8 @@
+<%= div_for comment do %>
+    <p>
+        <span class="glyphicon glyphicon-comment"> </span><strong> Posted <%= time_ago_in_words(comment.created_at) %> ago</strong>
+        <div><%= comment.body %></div>
+        <%= link_to 'Delete', post_comment_path(@post, comment), method: :delete, :confirm => 'Are you sure?' %>
+    </p>
+    
+<% end %>
