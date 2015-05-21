@@ -1,6 +1,10 @@
 == README
 Rails v4.0.2
+
 bundle install
+
 rake db:migrate
+
 rails s
+
 name : "admin", password: "secret"
