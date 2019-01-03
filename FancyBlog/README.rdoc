@@ -1,4 +1,14 @@
-== README
+== Fancy Blog
+
+This is a very old school project using Ruby on Rails.
+
+A blog with posts that can have comments.
+
+TODOs:
+* remove redundant top level directory
+* upgrade package versions
+* test that it still works
+
 Rails v4.0.2
 
 bundle install
